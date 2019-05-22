@@ -1,0 +1,12 @@
+a {
+  margin: 10px;
+}
+
+a span {
+  color: red;
+  text-transform: none;
+  line-height: 50px;
+}
+a span:last-child {
+  margin-left: 5px;
+}
