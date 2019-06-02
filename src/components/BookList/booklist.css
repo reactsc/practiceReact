@@ -1,0 +1,14 @@
+.action {
+  cursor: pointer;
+}
+.action {
+  margin: auto 4px;
+  transition: .1s;
+}
+.action:hover {
+  transform: scale(1.4)
+}
+.booklist:hover {
+  background-color: #eee;
+  font-weight: 500;
+}

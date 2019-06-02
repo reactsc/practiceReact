@@ -1,0 +1,9 @@
+nav {
+  height: 80px;
+}
+.brand-logo {
+  height: 40px;
+}
+.nav-link>i {
+  margin: 5px;
+}
