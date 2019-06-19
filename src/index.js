@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-// eslint-disable-next-line no-unused-vars
-import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
-// eslint-disable-next-line no-unused-vars
-import fontAwesome from 'font-awesome/css/font-awesome.min.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -35,6 +35,12 @@ export default class Nav extends Component {
           title: "About",
           url: "/about",
           icon: "fa fa-info"
+        },
+        {
+          id: 5,
+          title: "Feedback",
+          url: "/feedback",
+          icon: "fa fa-envelope-o"
         }
       ]
     } //state

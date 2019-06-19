@@ -4,38 +4,75 @@ import './booklist.css';
 class Book extends Component {
 
   state =  {
-    isEditable: false,
+    isEditable: false
   }
   
-  
-
+  enterTextarea= (e) => {
+    if(e.key === 'Enter') {
+      this.setState({
+        isEditable:false
+      })
+    }
+  }
+  save = () => {
+    console.log(this.state)
+    this.setState({isEditable: false})
+    console.log(this.state)
+  }
   render() {
-    let input = this.state.isEditable ?
-      <input
-        type="text"
-        placeholder="Enter Name"
-        value={ this.props.info.name }
-        onBlur={ () => this.setState({ isEditable: false }) }
-        // onKeyPress= { (e) => key=enter ? this.state.isEditable: false }
-        onChange={ (e) => this.props.editName(e.target.value, this.props.info.id) }      
+    let output = this.state.isEditable ?
+      <div className="d-flex">
+        <input
+          type="text"
+          placeholder="Book Name"
+          value={this.props.info.name}
+          // onBlur={() => this.setState({ isEditable: false })}
+          onKeyPress={this.enterTextarea}
+          onChange={e => this.props.editName(e.target.value, this.props.info.id)}
         />
-      : <p>{this.props.info.name}</p>
+        
+        <input
+          type="text"
+          placeholder="Author Name"
+          value={this.props.info.author}
+          // onBlur={() => this.setState({ isEditable: false })}
+          onKeyPress={this.enterTextarea}
+          onChange={e => this.props.editAuthor(e.target.value, this.props.info.id)}
+        />
+
+        <input
+          type="number"
+          placeholder="Book Price"
+          value={this.props.info.price}
+          // onBlur={() => this.setState({ isEditable: false })}
+          onKeyPress={ this.enterTextarea }
+          onChange={e => this.props.editPrice(e.target.value, this.props.info.id)}
+        />
+
+
+        <button 
+          className="btn btn-success mx-1"
+          onClick={ this.save }
+          // onClick={ console.log(this.state)}
+          >save</button>
+        <button 
+          className="btn btn-danger mx-1"
+          onClick={() => this.props.delete(this.props.info.id)}
+          >Delete</button>
+      </div>
+      : <div className="d-flex">
+        <p>{this.props.info.name} by
+          <a href="/" className="author-name"> {this.props.info.author} </a>
+        </p>
+        <span className="ml-auto"> ${this.props.info.price} </span>
+      </div>
 
     return (
-      <li className="list-group-item d-flex booklist">
-          { input }
-          <span className="ml-auto"> ${ this.props.info.price } </span>
-          <div className="ml-2 action-group">
-          <span 
-            onClick={ () => this.setState({ isEditable: true }) }>
-            <i className="fa fa-pencil text-primary action"></i>
-          </span>
-          <span 
-            onClick={ () => this.props.delete(this.props.info.id) }>
-            <i className="fa fa-trash text-danger action"></i>
-          </span>
-          </div>
-      </li>
+      <li
+        className="list-group-item booklist"
+        onClick={ () => this.setState({ isEditable: true }) } >
+        {output}
+        </li>
     )
   }
 }

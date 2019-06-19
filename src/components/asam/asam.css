@@ -1,0 +1,87 @@
+/****   for coverImage    ****/
+.coverImage {
+  position: relative;
+  height: auto;
+  max-height: 350px;
+  overflow: hidden;
+}
+.imageCaption {
+  width: 350px;
+  height: 50px;
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: 999px 0 0 999px;
+  color: #fff;
+  line-height: 50px;
+  font-size: 30px;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+/****   for ItemBox    ****/
+.itemCard {
+  widows: 100%;
+  max-width: 350px;
+  min-height: 200px;
+  background: #35cfda;
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 10px auto;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cardIcon {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.itemCard:hover {
+  background-color: #5decf7;
+  color: #fff;  
+  border: 1px solid #35cfda;
+}
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+
+/****   for .list-item    ****/
+.listSLnumber {
+  width: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: right;
+  margin-left: 0;
+}
+.list-action {
+  background-color: rgba(255, 251, 0, 0.5);
+  border-radius: 0 0 15px 15px;
+  display: none;
+  font-size: 12px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .5s;
+}
+.list-item {
+  background-color: #fdf;
+  transition: .5s;
+  position: relative;
+}
+.list-item:hover{
+  background-color: #fdf;
+}
+.list-item:hover .list-action {
+  display: block;
+}
