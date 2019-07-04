@@ -5,12 +5,13 @@ import './App.css';
 
 import techer from '../components/asam/assests/team-01.jpg'
 
-import Nav from './Nav/Nav';
-import BookList from './BookList/BookList';
+import Nav from './Nav/Nav'
+import BookList from './BookList/BookList'
 import Cover from './asam/Cover'
 import ItemCard from './asam/ItemCard'
 import ListCard from './asam/ListCard'
 import StopWatch from './stopwatch/StopWatch'
+import Post from './Blogs/Posts'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <header>
         <Nav />
         <BookList />
+        < Post />
         <Cover />
         
       </header>
@@ -92,6 +94,7 @@ function App() {
         </div>
         {/* ./row */ }
           <StopWatch />
+          
       </div>
     </div> // ./main
   );

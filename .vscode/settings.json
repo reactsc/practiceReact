@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.settings.openDefaultSettings": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.cursorStyle": "line-thin"
+}

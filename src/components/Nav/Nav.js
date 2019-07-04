@@ -20,9 +20,9 @@ export default class Nav extends Component {
         },
         {
           id: 2,
-          title: "Portfolio",
-          url: "/portfolio",
-          icon: "fa fa-book"
+          title: "asam",
+          url: "/asam",
+          icon: "fa fa-globe"
         },
         {
           id: 3,
