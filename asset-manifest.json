@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/practiceReact/static/css/main.17d2781f.chunk.css",
+    "main.js": "/practiceReact/static/js/main.0f272580.chunk.js",
+    "main.js.map": "/practiceReact/static/js/main.0f272580.chunk.js.map",
+    "runtime~main.js": "/practiceReact/static/js/runtime~main.68d24e60.js",
+    "runtime~main.js.map": "/practiceReact/static/js/runtime~main.68d24e60.js.map",
+    "static/css/2.c075f904.chunk.css": "/practiceReact/static/css/2.c075f904.chunk.css",
+    "static/js/2.2d656f3b.chunk.js": "/practiceReact/static/js/2.2d656f3b.chunk.js",
+    "static/js/2.2d656f3b.chunk.js.map": "/practiceReact/static/js/2.2d656f3b.chunk.js.map",
+    "index.html": "/practiceReact/index.html",
+    "precache-manifest.299cb3a8c480190c43a328ad9402525b.js": "/practiceReact/precache-manifest.299cb3a8c480190c43a328ad9402525b.js",
+    "service-worker.js": "/practiceReact/service-worker.js",
+    "static/css/2.c075f904.chunk.css.map": "/practiceReact/static/css/2.c075f904.chunk.css.map",
+    "static/css/main.17d2781f.chunk.css.map": "/practiceReact/static/css/main.17d2781f.chunk.css.map",
+    "static/media/bg1.jpg": "/practiceReact/static/media/bg1.8234b419.jpg",
+    "static/media/font-awesome.min.css": "/practiceReact/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/practiceReact/static/media/logo.32a31e4e.png"
+  }
+}
