@@ -12,6 +12,7 @@ import ItemCard from './asam/ItemCard'
 import ListCard from './asam/ListCard'
 import StopWatch from './stopwatch/StopWatch'
 import Post from './Blogs/Posts'
+import Client from './client/client'
 
 function App() {
   return (
@@ -94,6 +95,7 @@ function App() {
         </div>
         {/* ./row */ }
           <StopWatch />
+          <Client />
           
       </div>
     </div> // ./main
