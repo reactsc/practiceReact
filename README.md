@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Click [https://schoolwab.github.io/practiceReact/](https://schoolwab.github.io/practiceReact/) to view it in the browser as demo.
+Click [https://reactsc.github.io/practiceReact/](https://reactsc.github.io/practiceReact/) to view it in the browser as demo.
 
 
 ## Available Scripts
